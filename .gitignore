@@ -5,3 +5,4 @@
 /lib/**/*.dll
 *.nupkg
 /nuget.exe
+/.vs

@@ -4,6 +4,8 @@
     <!-- The identifier that must be unique within the hosting gallery -->
     <id>Bocca.OpenDBDiff.Schema.SQLServer.Generates</id>
 
+    <title>Open DBDiff SQL Server Assemblies</title>
+
     <!-- The package version number that is used when resolving dependencies -->
     <version>0.10.0</version>
 
