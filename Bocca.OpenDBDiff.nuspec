@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <!-- The identifier that must be unique within the hosting gallery -->
+    <id>Bocca.OpenDBDiff.Schema.SQLServer.Generates</id>
+
+    <!-- The package version number that is used when resolving dependencies -->
+    <version>0.10.0</version>
+
+    <!-- Authors contain text that appears directly on the gallery -->
+    <authors>igitur, ironicnet, drjustinhale</authors>
+
+    <!-- 
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  
+        -->
+    <owners></owners>
+
+    <packageTypes>
+      <packageType name="Dependency" />
+    </packageTypes>
+
+    <!-- License and project URLs provide links for the gallery -->
+    <licenseUrl>https://github.com/OpenDBDiff/OpenDBDiff/blob/develop/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/OpenDBDiff/OpenDBDiff</projectUrl>
+
+    <!-- The icon is used in Visual Studio's package manager UI -->
+    <iconUrl>file://App.png</iconUrl>
+
+    <!-- 
+            If true, this value prompts the user to accept the license when
+            installing the package. 
+        -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <!-- Any details about this particular release -->
+    <releaseNotes>Bump version to 0.10</releaseNotes>
+
+    <!-- 
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. 
+        -->
+    <description>
+      A database comparison tool for Microsoft SQL Server 2005+ that reports schema differences and creates a synchronization script.
+      This package contains the core assemblies to generate a comparison between SQL Server databases.
+    </description>
+
+    <!-- Copyright information -->
+    <copyright></copyright>
+
+    <!-- Tags appear in the gallery and can be used for tag searches -->
+    <tags>sql database compare diff</tags>
+
+    <!-- Dependencies are automatically installed when the package is installed -->
+    <dependencies>
+      <!-- <dependency id="Newtonsoft.Json" version="9.0" /> -->
+    </dependencies>
+  </metadata>
+
+  <!-- A readme.txt to display when the package is installed -->
+  <files>
+    <!-- <file src="readme.txt" target="" /> -->
+    <file src="lib\**" target="lib" />
+  </files>
+</package>
