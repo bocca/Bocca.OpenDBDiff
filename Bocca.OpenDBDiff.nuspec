@@ -25,7 +25,7 @@
     <projectUrl>https://github.com/OpenDBDiff/OpenDBDiff</projectUrl>
 
     <!-- The icon is used in Visual Studio's package manager UI -->
-    <iconUrl>file://App.png</iconUrl>
+    <iconUrl>https://github.com/bocca/Bocca.OpenDBDiff/raw/master/App.png</iconUrl>
 
     <!-- 
             If true, this value prompts the user to accept the license when
