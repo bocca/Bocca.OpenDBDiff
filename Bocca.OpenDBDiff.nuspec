@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <!-- The identifier that must be unique within the hosting gallery -->
-    <id>Bocca.OpenDBDiff.Schema.SQLServer.Generates</id>
+    <id>Bocca.OpenDBDiff.SQLServer.Schema</id>
 
     <title>Open DBDiff SQL Server Assemblies</title>
 
     <!-- The package version number that is used when resolving dependencies -->
-    <version>0.10.0</version>
+    <version>0.13.0.1</version>
 
     <!-- Authors contain text that appears directly on the gallery -->
     <authors>igitur, ironicnet, drjustinhale</authors>
@@ -23,11 +23,15 @@
     </packageTypes>
 
     <!-- License and project URLs provide links for the gallery -->
-    <licenseUrl>https://github.com/OpenDBDiff/OpenDBDiff/blob/develop/LICENSE</licenseUrl>
+    <license type="expression">GPL-2.0-only</license>
     <projectUrl>https://github.com/OpenDBDiff/OpenDBDiff</projectUrl>
 
     <!-- The icon is used in Visual Studio's package manager UI -->
+    <icon>App.png</icon>
     <iconUrl>https://github.com/bocca/Bocca.OpenDBDiff/raw/master/App.png</iconUrl>
+
+    <!-- Readme for the package. -->
+    <readme>README.md</readme>
 
     <!-- 
             If true, this value prompts the user to accept the license when
@@ -36,7 +40,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 
     <!-- Any details about this particular release -->
-    <releaseNotes>Bump version to 0.10</releaseNotes>
+    <releaseNotes>Bump version to 0.13</releaseNotes>
 
     <!-- 
             The description can be used in package manager UI. Note that the
@@ -55,13 +59,21 @@
 
     <!-- Dependencies are automatically installed when the package is installed -->
     <dependencies>
-      <!-- <dependency id="Newtonsoft.Json" version="9.0" /> -->
+      <group targetFramework="net452">
+        <dependency id="TSQL.Parser" version="1.5.2" />
+      </group>
+
+      <group targetFramework="net60">
+        <dependency id="TSQL.Parser" version="1.5.2" />
+        <dependency id="System.Data.SqlClient" version="4.8.5" />
+      </group>
     </dependencies>
   </metadata>
 
   <!-- A readme.txt to display when the package is installed -->
   <files>
-    <!-- <file src="readme.txt" target="" /> -->
+    <file src="App.png" target="" />
+    <file src="README.md" target="" />
     <file src="lib\**" target="lib" />
   </files>
 </package>

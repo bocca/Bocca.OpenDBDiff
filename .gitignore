@@ -6,3 +6,4 @@
 *.nupkg
 /nuget.exe
 /.vs
+/old
